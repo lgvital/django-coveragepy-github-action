@@ -28,6 +28,8 @@ fi
 
 source "${GITHUB_WORKSPACE}/${VENV_NAME}/bin/activate"
 
+python --version
+python -m pip install --upgrade pip
 pip install -r requirements/test.txt
 
 echo "Base setup complete. Setting up a sample DB url and running..."
