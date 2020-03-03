@@ -28,7 +28,7 @@ fi
 
 source "${GITHUB_WORKSPACE}/${VENV_NAME}/bin/activate"
 
-pip install -r requirements.txt
+pip install -r requirements/test.txt
 
 echo "Base setup complete. Setting up a sample DB url and running..."
 export DATABASE_URL='postgresql://ctest:coveragetest123@127.0.0.1:5432/demo'
